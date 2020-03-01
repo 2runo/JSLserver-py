@@ -6,6 +6,22 @@ SSL 작동 원리에 기반하여 RSA, AES 암호화 알고리즘을 통해 SSL 
 
 해당 프로젝트는 JSL Server를 Python3에서 구축하도록 하는 라이브러리입니다.
 
+JSL client는 JavaScript로 구현할 수 있습니다. [여기](https://github.com/2runo/JSL-js)에서 JSL client를 구현하는 방법을 알아보세요. 간단합니다!
+
+# JSL 작동 방식
+JSL은 다음과 같은 순서로 작동합니다.
+### 핸드셰이킹
+1. client hello - 서버가 클라이언트에게 JSL 프로토콜 사용 여부를 묻습니다.
+2. server hello - 클라이언트가 이에 응답합니다.
+3. RSA public key 전달 - 서버가 클라이언트에게 RSA public key를 전달합니다.
+4. AES key 생성 - 클라이언트에서 랜덤하게 AES key를 생성합니다.
+5. AES key 전달 - 클라이언트가 서버에게 AES key를 RSA public key로 암호화하여 전달합니다. 이때 제 3자(해커)는 AES key를 알아낼 수 없습니다.
+6. 핸드셰이킹 종료 - 이제 핸드셰이킹이 완료되었습니다!
+### 통신
+클라이언트가 서버에게 전달한 AES key를 통해 통신 메시지를 암호화하고 해독합니다.
+
+통신 내용은 모두 암호화되므로 제 3자(해커)는 통신 내용을 확인할 수 없습니다!
+
 # 사용법
 
 ### 라이브러리 설치
