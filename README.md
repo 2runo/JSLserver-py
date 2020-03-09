@@ -67,7 +67,7 @@ def onmsg(self, msg):
 ```
 `onclose()`는 클라이언트와의 연결이 끊어졌을 때 실행됩니다.
 ```python3
-def onerror(self):
+def onclose(self):
     print("closed")
 ```
 `self.address`에는 클라이언트의 주소(호스트, 포트)가 담깁니다.
