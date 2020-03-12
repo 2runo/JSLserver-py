@@ -2,11 +2,11 @@
 JSL은 [WebSocket](https://ko.wikipedia.org/wiki/%EC%9B%B9%EC%86%8C%EC%BC%93) 암호화 통신 프로토콜입니다.
 SSL 작동 원리에 기반하여 RSA, AES 암호화 알고리즘을 통해 SSL 인증서 없이도 안전한 통신을 할 수 있도록 해줍니다.
 
-현재 지원되는 서버 언어로는 [Python](python.org), 클라이언트 언어로는 [JavaScript](https://ko.wikipedia.org/wiki/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8)가 있습니다.
+현재 지원되는 서버 언어로는 [Python](python.org), 클라이언트 언어로는 [Python](python.org)과 [JavaScript](https://ko.wikipedia.org/wiki/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8)가 있습니다.
 
 해당 프로젝트는 JSL Server를 Python3에서 구축하도록 하는 라이브러리입니다.
 
-JSL client는 JavaScript로 구현할 수 있습니다. [여기](https://github.com/2runo/JSLclient-js)에서 JSL client를 구현하는 방법을 알아보세요. 간단합니다!
+JSL client는 Python이나 JavaScript로 구현할 수 있습니다. [여기(Python)](https://github.com/2runo/JSLclient-py)나 [여기(JavaScript)](https://github.com/2runo/JSLclient-js)에서 JSL client를 구현하는 방법을 알아보세요. 간단합니다!
 
 # JSL 작동 방식
 JSL은 다음과 같은 순서로 작동합니다.
