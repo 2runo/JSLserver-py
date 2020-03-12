@@ -6,7 +6,7 @@ SSL 작동 원리에 기반하여 RSA, AES 암호화 알고리즘을 통해 SSL 
 
 해당 프로젝트는 JSL Server를 Python3에서 구축하도록 하는 라이브러리입니다.
 
-JSL client는 JavaScript로 구현할 수 있습니다. [여기](https://github.com/2runo/JSL-js)에서 JSL client를 구현하는 방법을 알아보세요. 간단합니다!
+JSL client는 JavaScript로 구현할 수 있습니다. [여기](https://github.com/2runo/JSLclient-js)에서 JSL client를 구현하는 방법을 알아보세요. 간단합니다!
 
 # JSL 작동 방식
 JSL은 다음과 같은 순서로 작동합니다.
